@@ -103,8 +103,8 @@ def MediumLevel_fn(E):
             if E[i,j]==0:
                 Z=MediumLevel_step_one(i,j,E)
                 #print(Z)
-                for X in Z:       #For each scenario: 1. we check wether the whole problem is solved or not\
-                                  #2. If not we keep joing keeping a copy of the best we can do saved at a certain list
+                for X in Z:       #For each scenario: 1. we check wether the problem is solved or not\
+                                  #2. If not we keep going by adding a copy of the best we can do to a certain list
                     if X[0][0]==True:
                         Medium_Level=True
                         num_missing_elements=0
