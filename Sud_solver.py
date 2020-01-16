@@ -89,7 +89,7 @@ def iterating_over_elements(B):
     return     Failed, nu_missing_elements, First_zero_element_indx,First_zero_element_potential_values
 #print(iterating_over_elements(S))
 
-#Filling the empty spaces that can be filled without guessing + keeping a dict with the potential values of the remaining spaces
+#Filling the empty spaces that can be filled without guessing
 def EasyLevel_fn(C):
     Y=iterating_over_elements(C)
     Failed=Y[0]
@@ -113,6 +113,7 @@ def EasyLevel_fn(C):
     return Easy_Level, Z[2] , C , Z[3]
 #print(EasyLevel_fn(S))
 
+#the guessing game starts :D
 def backward_loop(L):
     while True:
         while len(L[-1][-1])!=0:
